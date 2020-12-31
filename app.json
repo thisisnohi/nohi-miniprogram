@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/content/content",
+    "pages/content/test",
+    "pages/mine/mine"
+  ],
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#ff0000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "NOHI-小程序"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "backgroundColor": "#E1b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black" ,
+    "list": [
+      {
+        "selectedIconPath": "images/pic1/1.png",
+        "iconPath": "images/pic1/1-3.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },{
+        "selectedIconPath": "images/pic1/2.png",
+        "iconPath": "images/pic1/2-2.png",
+        "pagePath": "pages/content/content",
+        "text": "内容"
+      },{
+        "selectedIconPath": "images/pic1/3.png",
+        "iconPath": "images/pic1/3-2.png",
+        "pagePath": "pages/mine/mine",
+        "text": "我的"
+      }
+    ]
+  }
+}

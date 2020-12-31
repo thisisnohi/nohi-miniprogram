@@ -1,0 +1,58 @@
+<view>
+
+  <navigator url="../home/home">前往HOME</navigator>
+
+  <text class="title">hello {{ name }}  click: {{ clickCount }} now: {{ now }}</text>
+  <text>\n</text>
+
+  <image src="https://picsum.photos/200"
+         style="height: 375rpx; width: 375rpx;"
+  ></image>
+
+  <swiper
+          indicator-dots="{{true}}"
+          autoplay="{{true}}"
+          style="width: 750rpx;">
+    <swiper-item>
+      <image src="https://picsum.photos/200"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://picsum.photos/250"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="https://picsum.photos/300"></image>
+    </swiper-item>
+  </swiper>
+
+  <button class="weui-btn weui-btn_primary" bind:tap="mainBtnTap">
+    主操作
+  </button>
+  <button class="weui-btn weui-btn_primary" bind:tap="showModal">
+    对话框 Modal
+  </button>
+  <button class="weui-btn weui-btn_primary weui-btn_loading">
+    <i class="weui-loading"></i>正在加载
+  </button>
+  <button class="weui-btn weui-btn_primary weui-btn_disabled">
+    禁止点击
+  </button>
+
+  <text class="title" wx:for="{{items}}" wx:key="index">
+    {{index}}、 {{item}}
+  </text>
+  <input placeholder="输入新增事项" model:value="{{inputValue}}" />
+  <button bind:tap="buttonHandler">新增</button>
+
+  <text>\n</text>
+
+  <navigator url="pages/mine/mine">跳转「我的」</navigator>
+  <navigator url="pages/mine/mine" open-type="switchTab">跳转「我的」switchTab</navigator>
+  <button bind:tap="gotoMine">跳转「我的」</button>
+  <button bind:tap="gotoMineSwitchTab">跳转「我的」SwitchTab</button>
+
+
+  <text>\n</text>
+  <text>\n</text>
+  <text>\n</text>
+
+</view>

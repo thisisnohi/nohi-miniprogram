@@ -1,0 +1,13 @@
+<view>
+  <text class="title">hello world</text>
+
+  <navigator url="pages/index/index">navigator</navigator>
+  <navigator url="/pages/index/index" open-type="switchTab">navigator switch tab</navigator>
+
+  <button bind:tap="gotoMine">跳转「我的」</button>
+  <button bind:tap="gotoMineSwitchTab">跳转「我的」SwitchTab</button>
+
+  <button bind:tap="gotoMineRedirectTo">redirectTo test</button>
+
+
+</view>

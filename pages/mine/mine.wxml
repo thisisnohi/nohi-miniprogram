@@ -1,0 +1,25 @@
+<view>
+  <text class="title">MINE</text>
+  <view style="width: 10em">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+
+  <open-data type="userNickName"></open-data>
+  <open-data type="userGender"></open-data>
+  <open-data type="userCity"></open-data>
+  <open-data type="userProvince"></open-data>
+  <open-data type="userCountry"></open-data>
+  <open-data type="userLanguage"></open-data>
+  <text>\n</text>
+
+  <text class="title">hello {{name}}</text>
+  <button open-type="getUserInfo" bind:getuserinfo="getUserInfo">
+    授权获取用户个人信息
+  </button>
+
+  <button bind:tap="gotoIndex">GOTO INDEX</button>
+  <button bind:tap="gotoIndexSwitchTab">GOTO INDEX: SwitchTab</button> 
+  <button bind:tap="gotoContentSwitchTab">gotoContentSwitchTab</button> 
+  
+
+</view>
