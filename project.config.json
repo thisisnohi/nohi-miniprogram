@@ -1,19 +1,16 @@
 {
-  "description": "项目配置文件",
-  "packOptions": {
-    "ignore": [],
-    "include": []
-  },
+  "description": "NOHI 小程序",
+  "miniprogramRoot": "miniprogram/",
   "setting": {
     "urlCheck": true,
     "es6": true,
-    "enhance": false,
+    "enhance": true,
     "postcss": true,
-    "preloadBackgroundData": false,
+    "preloadBackgroundData": true,
     "minified": true,
-    "newFeature": false,
+    "newFeature": true,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -22,32 +19,59 @@
     "checkSiteMap": true,
     "uploadWithSourceMap": true,
     "compileHotReLoad": false,
-    "useMultiFrameRuntime": false,
-    "useApiHook": true,
+    "useMultiFrameRuntime": true,
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
-    "useIsolateContext": true,
-    "useCompilerModule": true,
-    "userConfirmedUseCompilerModuleSwitch": false,
+    "useIsolateContext": false,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
     "packNpmRelationList": [],
     "minifyWXSS": true,
-    "bundle": false
+    "disableUseStrict": false,
+    "showES6CompileOption": false,
+    "useCompilerPlugins": [
+      "typescript",
+      "less"
+    ],
+    "ignoreDevUnusedFiles": false,
+    "ignoreUploadUnusedFiles": false,
+    "minifyWXML": true,
+    "lazyloadPlaceholderEnable": false,
+    "useStaticServer": true,
+    "localPlugins": false,
+    "condition": false,
+    "skylineRenderEnable": true,
+    "compileWorklet": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.14.1",
-  "appid": "wx891ecb98e267c2db",
-  "projectname": "nohi-mp",
   "simulatorType": "wechat",
   "simulatorPluginLibVersion": {},
-  "condition": {},
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "page/API/pages/storage/storage",
+          "pathName": "page/API/pages/storage/storage",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "srcMiniprogramRoot": "miniprogram/",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2
-  }
+  },
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "appid": "wxdc0b78f4dc0c4cc0",
+  "projectname": "nohi-miniprogram",
+  "libVersion": "2.33.0"
 }

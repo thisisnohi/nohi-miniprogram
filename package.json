@@ -1,0 +1,45 @@
+{
+  "name": "nohi-miniprogram",
+  "version": "1.0.0",
+  "description": "NOHI 小程序 DEMO",
+  "scripts": {
+    "init": "npm run sync && cd ../miniprogram/ && npm i --production",
+    "lint": "eslint .",
+    "wxss:transform-vars": "gulp transform-css-vars",
+    "sync": "git submodule update --init --recursive",
+    "pull": "git submodule foreach --recursive git pull origin",
+    "gco": "git submodule foreach --recursive git checkout"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thisisnohi/nohi-miniprogram.git"
+  },
+  "author": "NOHI",
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/thisisnohi/nohi-miniprogram/issues"
+  },
+  "homepage": "https://github.com/thisisnohi/nohi-miniprogram#readme",
+  "devDependencies": {
+    "eslint-config-wxapp": "^1.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.6.1",
+    "@typescript-eslint/parser": "^4.6.1",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.1.0",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-config-alloy": "^3.8.2",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "postcss": "^8.3.11",
+    "postcss-css-variables": "^0.18.0",
+    "typescript": "^3.2.1",
+    "typescript-eslint-parser": "^22.0.0"
+  },
+  "dependencies": {
+    
+  }
+}

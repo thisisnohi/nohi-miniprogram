@@ -1,3 +1,5 @@
+
+
 Page({
   gotoMine(event) {
     wx.navigateTo({
